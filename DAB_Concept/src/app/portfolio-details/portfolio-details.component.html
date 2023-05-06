@@ -1,0 +1,10 @@
+<div *ngIf="memberInfo != null">
+  <h1><strong>{{memberInfo.member.first_name}} {{memberInfo.member.last_name}}</strong></h1>
+  <p>{{memberInfo.about}}</p>
+  <h5><strong>Education: </strong>{{memberInfo.education}}</h5>
+  <h5><strong>Skills: </strong>{{memberInfo.skills}}</h5>
+  <h5><strong>Hobbies: </strong>{{memberInfo.hobbies}}</h5>
+  <h4><strong>Email: </strong>{{memberInfo.email}}</h4>
+  <h4><strong>GitHub: </strong>{{memberInfo.github}}</h4>
+  <h4><strong>Telegram: </strong>{{memberInfo.tg}}</h4>
+</div>

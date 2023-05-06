@@ -1,0 +1,122 @@
+<div>
+    <div class="row ps-5 pe-5" style="background-color: #1c1c1c; padding-top: 150px; padding-bottom: 170px;">
+        <div class="about__section" id="about">
+            <div class="headers">
+                About Us
+            </div>
+            <div class="descriptions">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, nostrum consectetur explicabo maxime illum ducimus voluptates cumque eaque culpa quam. Cum nobis atque eius ab maiores perferendis incidunt quo soluta.
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5 pb-5 ps-5 pe-5" style="background-image: url(../../assets/bg.png); background-attachment: fixed;">
+        <div class="members__section" id="general_of_members">
+            <div class="headers">Members</div>
+            <div class="descriptions pb-5"><h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, voluptatibus, deleniti iste quo voluptas temporibus fugit doloribus ratione molestias deserunt non mollitia itaque earum pariatur totam nihil autem, reiciendis repellat?</h4></div>
+            <div class="row row-cols-1 row-cols-md-3">
+            <div class="col pb-2">
+                <div class="card" routerLink="dan" (click)="scrollUp()" style="cursor: pointer;">
+                <img src="{{membersInfo[2].photo}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Aboka iOS dev</h5>
+                    <p class="card-text">{{membersInfo[2].brief_info}}</p>
+                </div>
+                </div>
+            </div>
+            <div class="col pb-2">
+                <div class="card" routerLink="adil" (click)="scrollUp()" style="cursor: pointer;">
+                <img src="{{membersInfo[0].photo}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Abylay Yerzhanov</h5>
+                    <p class="card-text">{{membersInfo[0].brief_info}}</p>
+                </div>
+                </div>
+            </div>
+            <div class="col pb-2">
+                <div class="card" routerLink="beka" (click)="scrollUp()" style="cursor: pointer;">
+                <img src="{{membersInfo[1].photo}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Aby</h5>
+                    <p class="card-text">{{membersInfo[1].brief_info}}</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row ps-5 pe-5" style="background-color: #1c1c1c; padding-top: 100px; padding-bottom: 100px;">
+        <div class="projects__sections">
+            <div class="headers" id="projects">Projects</div>
+            <div class="descriptions pb-5"><h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, voluptatibus, deleniti iste quo voluptas temporibus fugit doloribus ratione molestias deserunt non mollitia itaque earum pariatur totam nihil autem, reiciendis repellat?</h4></div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <a class="card" href="{{projects[0].link}}" style="text-decoration: none; color: black">
+                    <img src="{{projects[0].photo}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{projects[0].title}}</h5>
+                        <p class="card-text">{{projects[0].brief_info}}</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a class="card" href="{{projects[1].link}}" style="text-decoration: none; color: black">
+                    <img src="{{projects[1].photo}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{projects[1].title}}</h5>
+                        <p class="card-text">{{projects[1].brief_info}}</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a class="card" href="{{projects[0].link}}" style="text-decoration: none; color: black">
+                    <img src="{{projects[2].photo}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{projects[2].title}}</h5>
+                        <p class="card-text">{{projects[2].brief_info}}</p>
+                    </div>
+                    </a>
+                </div>
+
+<!--                <div class="col">-->
+<!--                    <div class="card" onclick="location.href='#';" style="cursor: pointer;">-->
+<!--                    <img src="../../assets/project.png" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Project 4</h5>-->
+<!--                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur perferendis rerum quis aspernatur sequi architecto sint impedit, fuga tenetur!</p>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col">-->
+<!--                    <div class="card" onclick="location.href='#';" style="cursor: pointer;">-->
+<!--                    <img src="../../assets/project.png" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Project 5</h5>-->
+<!--                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur perferendis rerum quis aspernatur sequi architecto sint impedit, fuga tenetur!</p>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col">-->
+<!--                    <div class="card" onclick="location.href='#';" style="cursor: pointer;">-->
+<!--                    <img src="../../assets/project.png" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Project 6</h5>-->
+<!--                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur perferendis rerum quis aspernatur sequi architecto sint impedit, fuga tenetur!</p>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5 pb-5 ps-5 pe-5" style="background-image: url(../../assets/hexagon.svg); background-attachment: fixed;">
+        <div class="contact_us__section" id="contact_us">
+            <h1 class="headers">
+                Contact Us
+            </h1>
+            <h4 class="descriptions">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, nostrum consectetur explicabo maxime illum ducimus voluptates cumque eaque culpa quam. Cum nobis atque eius ab maiores perferendis incidunt quo soluta.</h4>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div>
+    <div class="row pt-4 ps-3">
+        <button (click)="show_portfolio()" class="col-3 btn btn-success ms-3">Portfolio</button>
+        <button (click)="show_blogs()" class="col-3 btn btn-warning ms-3">Blogs</button>
+        <button (click)="show_admin_panel()" class="col-3 btn btn-primary ms-3">Admin panel</button>
+    </div>
+    <div class="content row pt-2 ps-4 pe-4 mt-3" style="background-color: white; width: 95%; margin: 0 auto; height: auto;">
+        <div *ngIf="flag == 'portfolio'" class="portfolio">
+            <app-portfolio-details></app-portfolio-details>
+        </div>
+        <div *ngIf="flag == 'blogs'" class="blogs">
+            <app-blogs></app-blogs>
+        </div>
+        <div *ngIf="flag == 'admin'" class="admin_panel">
+            <app-admin-panel></app-admin-panel>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+    img {
+        max-width: 80%;
+    } 
+}
+
+@media (max-width: 1200px) {
+    img {
+        max-width: 90%;
+    }
+}
+
+.hello__section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.left__content {
+    display: flex;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+}

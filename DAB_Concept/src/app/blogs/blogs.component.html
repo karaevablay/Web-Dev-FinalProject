@@ -1,0 +1,16 @@
+<div *ngIf="!showSpecificBlog">
+    <h1><strong>Blogs</strong></h1>
+    <div *ngFor="let blog of blogs" (click)="showBlog(blog)">
+        <div class="list__item row pt-2 pb-2 ps-2 pe-2" *ngIf="blog.member.first_name == memberFirstName">
+          <h3>{{blog.title}}</h3>
+          <h6>{{blog.creation_date}}</h6>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="showSpecificBlog">
+  <h3><strong>{{specificBlog.title}}</strong></h3>
+  <h6>{{specificBlog.creation_date}}</h6>
+  <p>{{specificBlog.content}}</p>
+  <button class="btn btn-danger" (click)="hideBlog()">Hide the blog</button>
+</div>
